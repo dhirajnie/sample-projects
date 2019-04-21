@@ -42,6 +42,11 @@ public class MockitoDemoApplicationTests
     {
         List<Integer> listMock = mock( List.class );
         when( listMock.size() ).thenReturn( 10 );
+<<<<<<< HEAD
+=======
+        System.out.println("THis change has to be cherrypicked ");
+        System.out.println("Another change to be cherryPicked");
+>>>>>>> 8a00aac... pick 1
         assertEquals( 10, listMock.size() );
 
     }
