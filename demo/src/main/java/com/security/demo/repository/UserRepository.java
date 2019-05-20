@@ -1,14 +1,13 @@
 package com.security.demo.repository;
 
 import com.security.demo.entities.User;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Repository;
 
 
-@Configuration
-public interface UserRepository extends JpaRepository<User, Integer>
+@Repository
+public interface UserRepository extends CrudRepository<User,Integer>
 {
-    User findByName( String userName );
 
-    User saveAndFlush( User user );
 }

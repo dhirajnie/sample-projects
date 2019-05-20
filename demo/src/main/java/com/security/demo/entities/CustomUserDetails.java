@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 
 
-public class CustomUserDetails extends User implements UserDetails
+public class CustomUserDetails implements UserDetails
 {
 
 
@@ -20,14 +20,14 @@ public class CustomUserDetails extends User implements UserDetails
     @Override
     public String getPassword()
     {
-        return super.getPassword();
+        return null;
     }
 
 
     @Override
     public String getUsername()
     {
-        return super.getName();
+        return null;
     }
 
 
