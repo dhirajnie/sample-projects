@@ -1,0 +1,2 @@
+
+command to deploy app to google cloud  mvn appengine:deploy
